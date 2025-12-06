@@ -14,10 +14,11 @@ Framework Server: Express JS
 
 Database: Mongo DB
 
+https://cloud.mongodb.com/v2/6933e005d918ae33722c58d8#/overview?automateSecurity=true
+
 IP: 79.156.238.12
 User: coragliasantiago_db_user 
 Password: SVBGqQ8xKiKr7yTH 
 
-
-
-
+gitignore generator
+https://mrkandreev.name/snippets/gitignore-generator/

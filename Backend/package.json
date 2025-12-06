@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Tutorial for introduction to backend development",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
   "type": "git",
   "url": "https://github.com/Scoraglia/Intro_to_Backend_Web_Dev.git"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   },
   "author": "Santiago Coraglia",
   "license": "ISC"
