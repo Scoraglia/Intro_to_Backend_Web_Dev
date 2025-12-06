@@ -1,0 +1,11 @@
+{
+  "name": "intro_to_backend_web_dev",
+  "version": "1.0.0",
+  "description": "Tutorial for introduction to backend development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santiago Coraglia",
+  "license": "ISC"
+}
