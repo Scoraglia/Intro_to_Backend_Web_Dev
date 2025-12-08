@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "description": "Tutorial for introduction to backend development",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/Scoraglia/Intro_to_Backend_Web_Dev.git"
+    "type": "git",
+    "url": "https://github.com/Scoraglia/Intro_to_Backend_Web_Dev.git"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "mongoose": "^9.0.1",
     "nodemon": "^3.1.11"
