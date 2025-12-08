@@ -23,3 +23,11 @@ Password: SVBGqQ8xKiKr7yTH
 gitignore generator
 https://mrkandreev.name/snippets/gitignore-generator/
 
+
+
+Project General Steps:
+
+
+
+Project Structure:
+
