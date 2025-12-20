@@ -1,5 +1,4 @@
-import { useReducer } from "react";
-import {User} from "../models/users.model.js";
+import {User} from "../models/user.model.js";
 
 const registerUser = async (req, res) => {
     try {
@@ -30,7 +29,7 @@ const registerUser = async (req, res) => {
 
     res.status(201).json({
         message: "User registered",
-        user: {user._id, email: user.email, username: user.username}
+        user: {id: user._id, email: user.email, username: user.username}
     });
 
     } catch (error) {
