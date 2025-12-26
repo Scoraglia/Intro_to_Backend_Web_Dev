@@ -41,7 +41,7 @@ const loginUser = async (req, res) => {
     try {
 
         // Checking if the User already exists
-        const {email, password} = req.body;
+        const {email,password} = req.body;
 
         const user = await User.findOne({
             email: email.toLowerCase()
@@ -52,10 +52,11 @@ const loginUser = async (req, res) => {
         });
 
         //compare passwords
-        const isMatch = await user.comparePassword("password");
+        const isMatch = await user.comparePassword(password);
+
         if(!isMatch) return res.status(400).json({
             message:"Invalid Credentials"
-        })
+        });
 
         res.status(200).json({
             message: "User Logged In",
