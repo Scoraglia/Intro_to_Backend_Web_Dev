@@ -69,7 +69,7 @@ const loginUser = async (req, res) => {
 
     } catch (error) {
         res.status(500).json({
-            message: "Internal Server Error"
+            message: "Internal Server Error", error
         })
     }
 };
@@ -92,7 +92,7 @@ const logoutUser = async (req, res) => {
         })
     } catch (error) {
          res.status(500).json({
-            message: "Internal Server Error"
+            message: "Internal Server Error", error
         })
     }
 };
