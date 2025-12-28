@@ -5,3 +5,4 @@ const router = Router();
 
 router.route('/create').post(createPost);
 
+export default router;
