@@ -1,4 +1,4 @@
-import { Post } from "../models/post.model";
+import { Post } from "../models/post.model.js";
 
 //Create a post
 const createPost = async (req, res) => {
@@ -10,13 +10,28 @@ const createPost = async (req, res) => {
             return res.status(400).json({
                 message: "All field required"
             });
-
-            const post = await Post.create({name, description, age});
-
-            res.status(201).json({
-                message: "Post created succssesfully", post
-            });
         }
+
+        const post = await Post.create({name, description, age});
+
+        res.status(201).json({
+            message: "Post created succssesfully", post
+        });
+        
+        
+    } catch (error) {
+        res.status(500).json({
+            message: "Internal Server Error", error
+        })
+    }
+}
+
+//Read all posts
+const getPosts = async (req, res) => {
+    try {
+
+        const post = await Post.find();
+        res.status(200).json(posts);
         
     } catch (error) {
         res.status(500).json({
@@ -26,5 +41,6 @@ const createPost = async (req, res) => {
 }
 
 export {
-    createPost
+    createPost,
+    getPosts
 }; 
